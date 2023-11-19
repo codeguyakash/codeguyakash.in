@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+#logo {
+  border-radius: 5px;
+  font-size: 35px;
+  font-family: "Paytone One", sans-serif;
+}
+#resume-btn {
+  border: 2px solid #fcba28;
+  font-size: 18px;
+  border-radius: 25px;
+  padding: 10px 30px;
+  color: #fcba28;
+}
+#resume-btn:hover {
+  background: #fcba28;
+  color: #231f20;
+}
+ul {
+  display: flex;
+  align-items: center;
+}
+li {
+  font-size: 20px;
+  color: #fcba28;
+  list-style: none;
+  margin-right: 50px;
+}
+li:hover {
+  color: #f9f4da;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    margin-bottom: 0;
+  }
+  #nav-items {
+    display: none;
+  }
+  #logo {
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  #resume-btn {
+    padding: 8px 20px;
+  }
+}

@@ -1,0 +1,29 @@
+#project-section {
+  margin-top: 50px;
+}
+.projects {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+#heading{
+  margin: 100px 0;
+}
+#heading > h1 {
+  font-size: 72px;
+  font-family: "Paytone One", sans-serif;
+  text-align: center;
+}
+#heading > h3 {
+  text-align: center;
+  font-weight: 300;
+  font-family: "Outfit", sans-serif;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .projects {
+    gap: 40px;
+  }
+}

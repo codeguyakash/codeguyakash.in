@@ -1,0 +1,80 @@
+#hero-section {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#hero-content > h1 {
+  font-size: 72px;
+  font-family: "Paytone One", sans-serif;
+}
+#hero-content > h2 {
+  margin-top: 10px;
+  font-size: 40px;
+}
+#hero-content > div > p {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+#hire-btn {
+  font-size: 18px;
+  border: 2px solid #fcba28;
+  border-radius: 25px;
+  padding: 10px 30px;
+  color: #fcba28;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#hire-btn:hover {
+  margin-top: 20px;
+  background: #fcba28;
+  color: #231f20;
+}
+#hero-image {
+  position: absolute;
+  width: 350px;
+  background: #f9f4da;
+  top: 40px;
+  left: 25px;
+  border-radius: 300px 200px;
+  border: 5px solid #3f3d3e;
+}
+
+#hero-image-div > div {
+  padding: 10px;
+  border-radius: 10px;
+  background: #fcba28;
+  box-shadow: 10px 10px 0 #f9f4da;
+  width: 400px;
+  height: 500px;
+  transform: rotate(-2deg);
+}
+@media only screen and (max-width: 600px) {
+  #hero-section {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  #hero-content > h1 {
+    font-size: 62px;
+  }
+  #hero-content > h2 {
+    margin-top: 10px;
+    font-size: 30px;
+  }
+  #hero-content > div > p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  #hero-image-div > div {
+    margin-top: 20px;
+    width: 320px;
+    height: 400px;
+  }
+  #hero-image {
+    width: 260px;
+    top: 40px;
+    left: 25px;
+  }
+}
