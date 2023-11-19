@@ -11,6 +11,7 @@ nav {
   border-radius: 5px;
   font-size: 35px;
   font-family: "Paytone One", sans-serif;
+  cursor: pointer;
 }
 #resume-btn {
   border: 2px solid #fcba28;
@@ -18,10 +19,13 @@ nav {
   border-radius: 25px;
   padding: 10px 30px;
   color: #fcba28;
+  background: #0f0d0e;
+  transition: 0.5s;
 }
 #resume-btn:hover {
   background: #fcba28;
   color: #231f20;
+  transition: 0.5s;
 }
 ul {
   display: flex;
@@ -32,10 +36,12 @@ li {
   color: #fcba28;
   list-style: none;
   margin-right: 50px;
+  transition: 0.5s;
 }
 li:hover {
   color: #f9f4da;
   cursor: pointer;
+  transition: 0.5s;
 }
 @media only screen and (max-width: 600px) {
   nav {
