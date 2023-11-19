@@ -5,6 +5,13 @@
   justify-content: space-between;
   flex-direction: row;
 }
+/* #hero-section {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 100px;
+} */
+
 #hero-content > h1 {
   font-size: 72px;
   font-family: "Paytone One", sans-serif;
@@ -54,6 +61,15 @@
   height: 500px;
   transform: rotate(-2deg);
 }
+
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  #hero-section {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+ 
+}
+
 @media only screen and (max-width: 600px) {
   #hero-section {
     margin-top: 10px;
