@@ -1,0 +1,71 @@
+#skill-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#skill-section > .container {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+.skill {
+  color: #0f0d0e;
+  border: 5px solid #f9f4da;
+  text-align: center;
+  padding: 50px;
+  font-size: 24px;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.skill:hover {
+  box-shadow: 10px 10px 0 #8e8d88;
+  scale: 1.1;
+  transition: 0.5s;
+}
+.skill-title {
+  color: #0f0d0e;
+}
+#skill-section > #heading {
+  margin: 50px 0;
+}
+#skill-section > #heading > h1 {
+  font-size: 72px;
+  font-family: "Paytone One", sans-serif;
+  text-align: center;
+}
+#skill-section > #heading > h3 {
+  text-align: center;
+  font-weight: 300;
+  font-family: "Outfit", sans-serif;
+  font-size: 30px;
+}
+.skill:nth-child(1) {
+  background: #0ba95b;
+}
+.skill:nth-child(2) {
+  background: #fc7428;
+}
+.skill:nth-child(3) {
+  background: #7b5ea7;
+}
+.skill:nth-child(4) {
+  background: #f9f4da;
+}
+.skill:nth-child(5) {
+  background: #12b5e5;
+}
+.skill:nth-child(6) {
+  background: #ed203d;
+}
+.skill:nth-child(7) {
+  background: #0ba95b;
+}
+.skill:nth-child(8) {
+  background: #fc7428;
+}
+.skill:nth-child(9) {
+  background: #7b5ea7;
+}
+.skill:nth-child(10) {
+  background: #f9f4da;
+}

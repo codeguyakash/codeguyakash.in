@@ -1,0 +1,41 @@
+#about-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#about-content > #heading > h1 {
+  font-size: 72px;
+  font-family: "Paytone One", sans-serif;
+}
+#about-content > #heading > h3 {
+  text-align: center;
+  font-weight: 300;
+  font-family: "Outfit", sans-serif;
+  font-size: 30px;
+}
+#about-content > p {
+  font-size: 24px;
+  font-family: "Outfit", sans-serif;
+}
+#about-content > p > span {
+  color: #fcba28;
+}
+#about-image > img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  border: 10px solid #fcba28;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+  margin-bottom: 50px;
+}
+#about-image > img:hover {
+  scale: 1.05;
+  transition: 0.5s;
+}
+#about-content {
+  width: 55%;
+  margin: 0 auto;
+  text-align: justify;
+}

@@ -4,6 +4,7 @@
   border-radius: 10px;
   box-shadow: 10px 10px 0 #8e8d88;
   transition: 0.5s;
+  border: 5px solid #f9f4da;
 }
 .cards:hover {
   scale: 1.02;

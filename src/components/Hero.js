@@ -19,7 +19,6 @@ const Hero = () => {
             <img src={heroimage} alt='hero-image' id='hero-image' />
           </div>
         </div>
-
       </section>
     </>
   )
