@@ -6,7 +6,7 @@
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 40px;
+  gap: 30px;
 }
 .skill {
   color: #0f0d0e;
@@ -16,6 +16,8 @@
   font-size: 24px;
   transition: 0.5s;
   border-radius: 10px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 .skill:hover {
   box-shadow: 10px 10px 0 #8e8d88;
@@ -24,6 +26,7 @@
 }
 .skill-title {
   color: #0f0d0e;
+  
 }
 #skill-section > #heading {
   margin: 50px 0;

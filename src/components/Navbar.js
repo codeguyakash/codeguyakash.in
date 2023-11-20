@@ -1,7 +1,7 @@
 import React from 'react'
 import './Navbar.css'
 
-const Navbar=()=> {
+const Navbar = () => {
     return (
         <>
             <div className='container'>
@@ -18,7 +18,7 @@ const Navbar=()=> {
                         </ul>
                     </div>
                     <div >
-                        <button id='resume-btn'>RESUME</button>
+                        <a id='resume-btn' href='../utils/Akash-Resume.pdf' download="Akash-Resume.pdf">RESUME</a>
 
                     </div>
 

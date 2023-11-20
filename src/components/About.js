@@ -1,5 +1,4 @@
 import React from 'react';
-import heroimage from "../utils/heroimage.png"
 import './About.css';
 
 const About = () => {

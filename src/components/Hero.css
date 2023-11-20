@@ -23,17 +23,18 @@
 }
 #hero-content > div > p {
   margin-top: 10px;
+  margin-bottom: 30px;
   font-size: 24px;
 }
 
 #hire-btn {
+  text-decoration: none;
   font-size: 18px;
   border: 2px solid #fcba28;
   background: #0f0d0e;
   border-radius: 25px;
   padding: 10px 30px;
   color: #fcba28;
-  margin-top: 20px;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -69,7 +70,6 @@
     margin-top: 10px;
     flex-direction: column;
   }
- 
 }
 
 @media only screen and (max-width: 600px) {
@@ -89,7 +89,7 @@
     font-size: 16px;
   }
   #hero-image-div > div {
-    margin-top: 20px;
+    margin-top: 30px;
     width: 320px;
     height: 400px;
   }

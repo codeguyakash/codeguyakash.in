@@ -22,6 +22,13 @@ nav {
   background: #0f0d0e;
   transition: 0.5s;
 }
+#resume-btn {
+  color: #fcba28;
+  text-decoration: none;
+}
+#resume-btn > a:hover {
+  color: #0f0d0e;
+}
 #resume-btn:hover {
   background: #fcba28;
   color: #231f20;
@@ -44,7 +51,6 @@ li:hover {
   transition: 0.5s;
 }
 @media screen and (min-width: 601px) and (max-width: 1023px) {
-  
   #nav-items {
     display: none;
   }

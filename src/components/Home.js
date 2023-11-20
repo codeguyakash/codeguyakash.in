@@ -5,18 +5,21 @@ import Projects from './Projects'
 import Skills from './Skills'
 import Divider from './Divider'
 import About from './About'
+import Footer from './Footer'
 
 const Home = () => {
     return (
         <>
             <Navbar />
             <Hero />
-            <Divider/>
-            <Skills/>
-            <Divider/>
+            <Divider />
+            <Skills />
+            <Divider />
             <Projects />
-            <Divider/>
-            <About/>
+            <Divider />
+            <About />
+            <Divider />
+            <Footer />
         </>
     )
 }
