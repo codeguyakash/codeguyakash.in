@@ -4,17 +4,17 @@ import './Navbar.css'
 const Navbar = () => {
     return (
         <>
-            <div className='container'>
+            <div className='container' >
                 <nav>
                     <div id='logo'>
                         CODEGUYAKASH
                     </div>
                     <div id='nav-items'>
                         <ul>
-                            <li>Portfolio</li>
-                            <li>Projects</li>
-                            <li>About</li>
-                            <li>Contact</li>
+                            <li><a href='#hero-section'>HOME</a></li>
+                            <li><a href='#skill-section'>SKILLS</a></li>
+                            <li><a href='#project-section'>PROJECTS</a></li>
+                            <li><a href='#about-section'>ABOUT</a></li>
                         </ul>
                     </div>
                     <div >

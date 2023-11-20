@@ -40,12 +40,15 @@ ul {
 }
 li {
   font-size: 20px;
-  color: #fcba28;
   list-style: none;
   margin: 0px 25px;
   transition: 0.5s;
 }
-li:hover {
+li > a {
+  color: #fcba28;
+  text-decoration: none;
+}
+li > a:hover {
   color: #f9f4da;
   cursor: pointer;
   transition: 0.5s;
