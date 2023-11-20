@@ -7,10 +7,34 @@
 }
 body {
   background-color: #0f0d0e;
-  margin:50px 150px;
+  margin: 50px 150px;
+  --sb-track-color: #0f0d0e;
+  --sb-thumb-color: #fcba28;
+  --sb-size: 10px;
+
+  scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  transition: 0.5ms;
 }
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+  transition: 0.5ms;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 10px;
+  transition: 0.5ms;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 10px;
+  transition: 0.5ms;
+}
+
 @media only screen and (max-width: 600px) {
   body {
-    margin: 20px ;
+    margin: 20px;
   }
 }
