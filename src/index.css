@@ -23,6 +23,10 @@ body::-webkit-scrollbar {
   width: var(--sb-size);
   transition: 0.5ms;
 }
+::selection {
+  color: #0f0d0e;
+  background: #fcba28;
+}
 
 body::-webkit-scrollbar-track {
   background: var(--sb-track-color);
