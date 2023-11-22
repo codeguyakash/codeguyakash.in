@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
                     <div id='copyright'>copyright@2023-24 | Made with ❤️ by codeguyakash</div>
                 </div>
-                <a href='#body'>TOP</a>
+                <a href='#home' >TOP</a>
             </footer>
         </>
     )

@@ -7,6 +7,7 @@ import Divider from './Divider'
 import About from './About'
 import Footer from './Footer'
 
+
 const Home = () => {
     return (
         <>

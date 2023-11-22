@@ -6,7 +6,7 @@ import "./Projects.css"
 const Projects = () => {
     const [data, setData] = useState([]);
     useEffect(() => {
-        axios.get("https://codeguyakash.github.io/server/projects.json").then((res) => setData(res.data))
+        axios.get("https://codeguyakash.github.io/server/projects.json").then((res) => setData(res.data)); 
     }, [])
     return (
         <>
