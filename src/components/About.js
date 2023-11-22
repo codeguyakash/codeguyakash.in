@@ -11,7 +11,7 @@ const About = () => {
                 </div>
                 <div className='container'>
                     <div id='about-image'>
-                        <img src="https://codeguyakash.github.io/akash/image/1693131029776.jpg" alt='hero-image' />
+                        <img src="https://codeguyakash.github.io/akash/image/1693131029776.jpg" alt='heroimage' />
                     </div>
                     <div id='about-content'>
                         <p>Hey,👋 I'm <span>AKASH.</span> I am a skilled Frontend developer with expertise in ReactJs and experience building responsive,

@@ -12,11 +12,11 @@ const Hero = () => {
           <div>
             <p>You’ve come to the right place. We make learning the JavaScript ecosystem fun, approachable, and easy...</p>
           </div>
-          <a id='hire-btn' href="mailto:codeguyakash@gmail.com" target='_blank' >HIRE ME</a>
+          <a id='hire-btn' href="mailto:codeguyakash@gmail.com" >HIRE ME</a>
         </div>
         <div id='hero-image-div'>
           <div>
-            <img src={heroimage} alt='hero-image' id='hero-image' />
+            <img src={heroimage} alt='heroimage' id='hero-image' />
           </div>
         </div>
       </section>
