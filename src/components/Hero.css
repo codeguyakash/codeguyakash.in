@@ -20,11 +20,17 @@
 #hero-content > h2 {
   margin-top: 10px;
   font-size: 40px;
+  opacity: 0.5;
+  transform: translateY(3rem);
+  animation: fadeIn2 1s ease-in-out forwards;
 }
 #hero-content > div > p {
   margin-top: 10px;
   margin-bottom: 30px;
   font-size: 24px;
+  opacity: 0.5;
+  transform: translateY(3rem);
+  animation: fadeIn2 1s ease-in-out forwards;
 }
 
 #hire-btn {
@@ -37,6 +43,7 @@
   color: #fcba28;
   cursor: pointer;
   transition: 0.5s;
+  animation: fadeIn2 1s ease-in-out forwards;
 }
 #hire-btn:hover {
   margin-top: 20px;
@@ -62,7 +69,10 @@
   box-shadow: 10px 10px 0 #f9f4da;
   width: 400px;
   height: 500px;
-  transform: rotate(-2deg);
+  transform: rotate(10deg);
+  transform: translateY(3rem);
+  opacity: 0.5;
+  animation: fadeIn 900ms ease forwards;
 }
 
 @media screen and (min-width: 601px) and (max-width: 1023px) {
@@ -70,7 +80,8 @@
     margin-top: 10px;
     flex-direction: column;
   }
-  .welcome::after,.welcome::before{
+  .welcome::after,
+  .welcome::before {
     display: none;
   }
 }
@@ -101,7 +112,8 @@
     top: 40px;
     left: 25px;
   }
-  .welcome::after,.welcome::before{
+  .welcome::after,
+  .welcome::before {
     display: none;
   }
 }
@@ -120,13 +132,13 @@
   background-color: #0f0d0e;
   /* width: 0.125em; */
   height: 5.5rem;
-  animation: typewriter 2s steps(15) forwards;
+  animation: typewriter 2s steps(15) 1s forwards;
 }
 .welcome::after {
   width: 0.125em;
   height: 5.5rem;
   background-color: #fcba28;
-  animation: typewriter 2s steps(15) forwards, blink 750ms steps(24) infinite;
+  animation: typewriter 2s steps(15) 1s forwards, blink 750ms steps(24) infinite;
 }
 @keyframes typewriter {
   to {
@@ -136,5 +148,19 @@
 @keyframes blink {
   to {
     background: transparent;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+    transform: rotate(-5deg);
+  }
+}
+@keyframes fadeIn2 {
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
   }
 }
