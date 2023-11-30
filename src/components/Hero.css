@@ -120,13 +120,13 @@
   background-color: #0f0d0e;
   /* width: 0.125em; */
   height: 5.5rem;
-  animation: typewriter 3s steps(15) forwards;
+  animation: typewriter 2s steps(15) forwards;
 }
 .welcome::after {
   width: 0.125em;
   height: 5.5rem;
   background-color: #fcba28;
-  animation: typewriter 3s steps(15) forwards, blink 750ms steps(24) infinite;
+  animation: typewriter 2s steps(15) forwards, blink 750ms steps(24) infinite;
 }
 @keyframes typewriter {
   to {
