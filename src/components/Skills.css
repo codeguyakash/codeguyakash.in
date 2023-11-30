@@ -8,11 +8,14 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
 }
+.skills-logos {
+  width: 60px;
+}
 .skill {
   color: #0f0d0e;
   border: 5px solid #f9f4da;
   text-align: center;
-  padding: 50px;
+  padding: 20px 50px;
   font-size: 24px;
   transition: 0.5s;
   border-radius: 10px;
@@ -26,7 +29,6 @@
 }
 .skill-title {
   color: #0f0d0e;
-  
 }
 #skill-section > #heading {
   margin: 50px 0;
@@ -53,6 +55,7 @@
 }
 .skill:nth-child(4) {
   background: #f9f4da;
+  border: 5px solid #8e8d88;
 }
 .skill:nth-child(5) {
   background: #12b5e5;

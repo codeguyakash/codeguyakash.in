@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './ProjectCard.css'
+import starrating from "../utils/icons/rating.png"
 
 const projectCard = ({ items }) => {
+
+  // console.log(items.skills)
+
+
   return (
     <div className='card-container'>
       <div className='cards' style={{ background: items.color }}>
@@ -9,12 +14,22 @@ const projectCard = ({ items }) => {
 
         <h3 className='color'>{items.title}</h3>
         <p className='color' >{items.description}</p>
-        <a className='color' href={items.sourceCodeLink }>Source Code</a> <br />
-        <a className='color' href={items.demoLink}>Demo Code</a>
+        <h4 className='color' >Techbologies:{items.skills} </h4>
+        <div className='stars'>
+          <img src={starrating} alt='starrating' className='star-rating' />
+          <img src={starrating} alt='starrating' className='star-rating' />
+          <img src={starrating} alt='starrating' className='star-rating' />
+          <img src={starrating} alt='starrating' className='star-rating' />
+          <img src={starrating} alt='starrating' className='star-rating' />
+        </div>
+        <div>
+          <a className='color' href={items.sourceCodeLink}>Source Code</a> <br />
+          <a className='color' href={items.demoLink}>Demo Code</a>
+        </div>
 
       </div>
 
-    </div>
+    </div >
   )
 }
 
