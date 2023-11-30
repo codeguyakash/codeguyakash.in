@@ -18,7 +18,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div >
-                        <a id='resume-btn' href='../utils/Akash-Resume.pdf' download="Akash-Resume.pdf">RESUME</a>
+                        <a id='resume-btn' href="https://drive.google.com/file/d/11EmPEXaep-tYyU7z08I-V5p42Vwc8bGu/view" target='_blank' rel='refer'>DOWNLOAD CV</a>
 
                     </div>
 

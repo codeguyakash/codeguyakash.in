@@ -12,7 +12,9 @@ const Hero = () => {
           <div>
             <p>You’ve come to the right place. We make learning the JavaScript ecosystem fun, approachable, and easy...</p>
           </div>
-          <a id='hire-btn' href="mailto:codeguyakash@gmail.com" >HIRE ME</a>
+          <div id='hire-btn-div'>
+            <a id='hire-btn' href="mailto:codeguyakash@gmail.com" >HIRE ME</a>
+          </div>
         </div>
         <div id='hero-image-div'>
           <div>
