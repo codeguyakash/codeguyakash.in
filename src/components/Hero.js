@@ -7,7 +7,7 @@ const Hero = () => {
     <>
       <section id='hero-section'>
         <div id='hero-content'>
-          <h1>WELCOME, FRIEND</h1>
+          <h1 className='welcome'>WELCOME, FRIEND</h1>
           <h2>Stuck in tutorial hell?</h2>
           <div>
             <p>You’ve come to the right place. We make learning the JavaScript ecosystem fun, approachable, and easy...</p>

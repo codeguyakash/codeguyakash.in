@@ -70,6 +70,9 @@
     margin-top: 10px;
     flex-direction: column;
   }
+  .welcome::after,.welcome::before{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -97,5 +100,41 @@
     width: 260px;
     top: 40px;
     left: 25px;
+  }
+  .welcome::after,.welcome::before{
+    display: none;
+  }
+}
+
+/* animation typing and blinking */
+.welcome::before,
+.welcome::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: 0;
+  bottom: 0;
+  left: 8%;
+}
+.welcome::before {
+  background-color: #0f0d0e;
+  /* width: 0.125em; */
+  height: 5.5rem;
+  animation: typewriter 3s steps(15) forwards;
+}
+.welcome::after {
+  width: 0.125em;
+  height: 5.5rem;
+  background-color: #fcba28;
+  animation: typewriter 3s steps(15) forwards, blink 750ms steps(24) infinite;
+}
+@keyframes typewriter {
+  to {
+    left: 51%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
   }
 }

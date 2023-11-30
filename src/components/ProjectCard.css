@@ -3,27 +3,29 @@
   height: 320px;
   border-radius: 10px;
   box-shadow: 10px 10px 0 #8e8d88;
-  transition: 0.5s;
+  transition: 0;
   border: 5px solid #f9f4da;
-}
-.cards:hover {
-  scale: 1.02;
-  transition: 0.5s;
-}
-#project-image {
-  width: 80px;
-  /* display: block; */
-  margin: 0 auto;
-}
+  transform: translateY(3rem);
 
-.cards > p {
-  text-align: justify;
-}
-.cards > a {
-  font-weight: 600;
-  cursor: pointer;
-}
-.color {
-  margin-top: 5px;
-  color: #0f0d0e;
+  .cards:hover {
+    scale: 1.02;
+    transition: 0.5s;
+  }
+  #project-image {
+    width: 80px;
+    /* display: block; */
+    margin: 0 auto;
+  }
+
+  .cards > p {
+    text-align: justify;
+  }
+  .cards > a {
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .color {
+    margin-top: 5px;
+    color: #0f0d0e;
+  }
 }
