@@ -39,9 +39,16 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   transition: 0.5ms;
 }
+.online-status{
+  font-size: 10px;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+}
 
 @media only screen and (max-width: 600px) {
   body {
     margin: 20px;
   }
 }
+

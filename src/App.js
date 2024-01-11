@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 // import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 import './App.css';
+
 // import Test from "./components/Test";
 
 function App() {
@@ -10,7 +11,6 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/" element={<Test />} /> */}
       </Routes>
     </Router>
     // </SkeletonTheme>

@@ -19,12 +19,49 @@
       type="image/x-icon"
       href="https://codeguyakash.github.io/akash/icons/favicon.png"
     />
-    <link rel="apple-touch-icon" href="https://codeguyakash.github.io/akash/icons/favicon.png" />
-    <link rel="manifest" href="https://codeguyakash.github.io/akash/icons/favicon.png" />
-    <title>Akash | codeGuyAkash </title>
+    <link
+      rel="apple-touch-icon"
+      href="https://codeguyakash.github.io/akash/icons/favicon.png"
+    />
+    <link
+      rel="manifest"
+      href="https://codeguyakash.github.io/akash/icons/favicon.png"
+    />
+    <title>Akash</title>
+    <style>
+      .loader-container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #preloader {
+        background-color: #fcba28;
+        height: 5px;
+        border-radius: 10px;
+        animation: preloader 1s linear infinite;
+      }
+      @keyframes preloader {
+        0% {
+          width: 0%;
+        }
+
+        100% {
+          width: 80%;
+        }
+      }
+      #home {
+        background-color: #0f0d0e;
+      }
+    </style>
   </head>
   <body id="home">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="loader-container">
+        <div id="preloader"></div>
+      </div>
+    </div>
   </body>
 </html>
