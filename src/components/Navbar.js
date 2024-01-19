@@ -10,16 +10,24 @@ const Navbar = () => {
           <div id="nav-items">
             <ul>
               <li>
-                <a href="#hero-section">HOME</a>
+                <a target="_self" rel="noreferrer" href="#hero-section">
+                  HOME
+                </a>
               </li>
               <li>
-                <a href="#skill-section">SKILLS</a>
+                <a target="_self" rel="noreferrer" href="#skill-section">
+                  SKILLS
+                </a>
               </li>
               <li>
-                <a href="#project-section">PROJECTS</a>
+                <a target="_self" rel="noreferrer" href="#project-section">
+                  PROJECTS
+                </a>
               </li>
               <li>
-                <a href="#about-section">ABOUT</a>
+                <a target="_self" rel="noreferrer" href="#about-section">
+                  ABOUT
+                </a>
               </li>
             </ul>
           </div>
@@ -28,7 +36,7 @@ const Navbar = () => {
               id="resume-btn"
               href="https://drive.google.com/file/d/1GpLrPq3Fhp76mEkIadNNHXYzv6tR4RTo/view"
               target="_blank"
-              rel="refer"
+              rel="noreferrer"
             >
               DOWNLOAD CV
             </a>
