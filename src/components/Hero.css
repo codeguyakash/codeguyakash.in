@@ -126,7 +126,7 @@
 .welcome::after {
   content: "";
   position: absolute;
-  top: 40%;
+  top: 40px;
   right: 0;
   bottom: 0;
   left: 8%;
