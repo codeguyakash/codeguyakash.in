@@ -34,7 +34,7 @@ const Navbar = () => {
           <div>
             <a
               id="resume-btn"
-              href="https://drive.google.com/file/d/1GpLrPq3Fhp76mEkIadNNHXYzv6tR4RTo/view"
+              href="https://docs.google.com/document/d/1GBf_ttAsUqePP31VSDYzYbeAmU7fZevEcFfTm-HRWdg/view"
               target="_blank"
               rel="noreferrer"
             >
