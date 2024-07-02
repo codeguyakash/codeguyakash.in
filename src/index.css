@@ -39,7 +39,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   transition: 0.5ms;
 }
-.online-status{
+.online-status {
   font-size: 10px;
   position: fixed;
   left: 10px;
@@ -51,4 +51,3 @@ body::-webkit-scrollbar-thumb {
     margin: 20px;
   }
 }
-
