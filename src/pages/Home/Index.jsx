@@ -17,6 +17,7 @@ const Index = () => {
       setIsOnline(true);
     });
   }, []);
+
   return (
     <>
       <div>
