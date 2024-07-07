@@ -34,7 +34,7 @@
   transition: 0.5s;
 }
 #about-content {
-  width: 800px;
+  width: 80%;
   margin: 0 auto;
   text-align: justify;
 }

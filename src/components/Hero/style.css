@@ -78,7 +78,7 @@
   animation: fadeIn 900ms ease forwards;
 }
 
-@media screen and (min-width: 601px) and (max-width: 1023px) {
+@media screen and (min-width: 601px) and (max-width: 1200px) {
   #hero-section {
     margin-top: 10px;
     flex-direction: column;
@@ -122,8 +122,8 @@
 }
 
 /* animation typing and blinking */
-.welcome::before,
-.welcome::after {
+.welcomes::before,
+.welcomes::after {
   content: "";
   position: absolute;
   top: 20rem;
@@ -131,15 +131,15 @@
   bottom: 0;
   left: 8%;
 }
-.welcome::before {
+.welcomes::before {
   background-color: #0f0d0e;
   /* width: 0.125em; */
   height: 5.5rem;
   animation: typewriter 2s steps(15) 1s forwards;
 }
-.welcome::after {
+.welcomes::after {
   width: 0.125em;
-  height: 5.5rem;
+  height: 10.5rem;
   background-color: #fcba28;
   animation: typewriter 2s steps(15) 1s forwards, blink 750ms steps(24) infinite;
 }

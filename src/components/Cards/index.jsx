@@ -16,11 +16,11 @@ const index = ({ items }) => {
         <p className="color">{items.description}</p>
         <h4 className="color">Techbologies:{items.skills} </h4>
         <div className="stars">
-          <img src={starrating} alt="starrating" className="star-rating" />
-          <img src={starrating} alt="starrating" className="star-rating" />
-          <img src={starrating} alt="starrating" className="star-rating" />
-          <img src={starrating} alt="starrating" className="star-rating" />
-          <img src={starrating} alt="starrating" className="star-rating" />
+          <span className="star-rating">⭐</span>
+          <span className="star-rating">⭐</span>
+          <span className="star-rating">⭐</span>
+          <span className="star-rating">⭐</span>
+          <span className="star-rating">⭐</span>
         </div>
         <div>
           <a className="color" href={items.sourceCodeLink}>

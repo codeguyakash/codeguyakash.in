@@ -5,8 +5,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
   flex-direction: column;
+  padding: 100px 0;
 }
 .social-list {
   display: flex;
@@ -17,7 +18,7 @@ footer {
 }
 .social-items {
   background: #1c191a;
-  padding: 15px 25px;
+  padding: 8px 18px;
   border-radius: 10px;
   margin-bottom: 50px;
 }

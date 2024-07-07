@@ -6,6 +6,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
+  position: relative;
 }
 #logo {
   border-radius: 5px;
@@ -21,13 +22,8 @@ nav {
   color: #fcba28;
   background: #0f0d0e;
   transition: 0.5s;
-}
-#resume-btn {
-  color: #fcba28;
   text-decoration: none;
-}
-#resume-btn > a:hover {
-  color: #0f0d0e;
+  white-space: nowrap;
 }
 #resume-btn:hover {
   background: #fcba28;
@@ -53,24 +49,45 @@ li > a:hover {
   cursor: pointer;
   transition: 0.5s;
 }
-@media screen and (min-width: 601px) and (max-width: 1023px) {
+
+@media screen and (max-width: 1170px) {
   #nav-items {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #0f0d0e;
+    border-top: 1px solid #fcba28;
+    z-index: 1;
   }
-}
 
-@media only screen and (max-width: 600px) {
+  #nav-items.visible {
+    display: flex;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+
   nav {
     margin-bottom: 0;
   }
-  #nav-items {
-    display: none;
-  }
+
   #logo {
-    border-radius: 5px;
     font-size: 20px;
   }
+
   #resume-btn {
-    padding: 8px 20px;
+    padding: 6px 16px;
+    position: absolute;
+    right: 10px;
+    top: 1px;
   }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import heroimage from "../../assets/images/heroimage.png";
 
-const index = () => {
+const Index = () => {
   return (
     <section id="hero-section">
       <div id="hero-content">
@@ -29,4 +29,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

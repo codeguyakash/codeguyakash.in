@@ -1,43 +1,43 @@
-.cards {
-  padding: 20px;
-  min-height: 350px;
-  border-radius: 10px;
-  box-shadow: 10px 10px 0 #8e8d88;
-  transition: 0;
-  border: 5px solid #f9f4da;
-  transform: translateY(3rem);
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: space-around;
-}
-.cards:hover {
-  scale: 1.02;
-  transition: 0.5s;
-}
 #project-image {
   width: 60px;
   display: block;
   /* margin: 0 auto; */
 }
-.star-rating {
-  width: 40px;
-  margin: 0;
-  padding: 0;
+
+.projects {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
 }
-.stars {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+#project-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
-.cards > p {
-  text-align: justify;
+.projects {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
 }
-.cards > div > a {
-  font-weight: 600;
-  cursor: pointer;
+#heading {
+  margin: 50px 0;
 }
-.color {
-  margin-top: 5px;
-  color: #0f0d0e;
+#heading > h1 {
+  font-size: 72px;
+  font-family: "Paytone One", sans-serif;
+  text-align: center;
+}
+#heading > h3 {
+  text-align: center;
+  font-weight: 300;
+  font-family: "Outfit", sans-serif;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .projects {
+    gap: 40px;
+  }
 }

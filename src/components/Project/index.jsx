@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Cards from "../Cards/index";
+import Cards from "../Cards";
 import axios from "axios";
 import "./style.css";
 
-const index = () => {
+const Index = () => {
   const [data, setData] = useState([]);
+
   useEffect(() => {
     axios
       .get("https://codeguyakash.github.io/server/data.json")
@@ -12,6 +13,7 @@ const index = () => {
       .catch((e) => {
         console.log(e.message);
       });
+
     axios
       .get("https://api.github.com/users/codeguyakash")
       .then((res) =>
@@ -21,6 +23,7 @@ const index = () => {
         console.log(e.message);
       });
   }, []);
+
   return (
     <section id="project-section">
       <div id="heading">
@@ -28,12 +31,12 @@ const index = () => {
         <h3>Our courses are the ultimate brain food</h3>
       </div>
       <div className="projects">
-        {data.map((color, index) => (
-          <Cards items={color} key={index} />
+        {data.map((item, index) => (
+          <Cards items={item} key={index} />
         ))}
       </div>
     </section>
   );
 };
 
-export default index;
+export default Index;
