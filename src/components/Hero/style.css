@@ -143,6 +143,26 @@
   background-color: #fcba28;
   animation: typewriter 2s steps(15) 1s forwards, blink 750ms steps(24) infinite;
 }
+.welcome {
+  animation: changeColor 10s infinite alternate;
+}
+@keyframes changeColor {
+  0% {
+    color: #f9f4da;
+  }
+  25% {
+    color: #12b5e5;
+  }
+  50% {
+    color: #0ba95b;
+  }
+  75% {
+    color: #fc7428;
+  }
+  100% {
+    color: #7b5ea7;
+  }
+}
 @keyframes typewriter {
   to {
     left: 51%;
