@@ -18,7 +18,7 @@ const skills = [
   { id: 3, name: "ExpressJs", icon: express },
   { id: 4, name: "ReactJs", icon: reactjs },
 
-  { id: 5, name: "Tailwind Css", icon: tailwindcss },
+  { id: 5, name: "TailwindCSS", icon: tailwindcss },
   { id: 6, name: "JavaScript", icon: javascript },
   { id: 7, name: "HTML", icon: html },
   { id: 8, name: "CSS", icon: css },
