@@ -11,27 +11,32 @@ import html from "../../assets/icons/html.svg";
 import css from "../../assets/icons/css.svg";
 import github from "../../assets/icons/github.svg";
 import mysql from "../../assets/icons/mysql.svg";
+import angular from "../../assets/icons/angular.svg";
+import materailui from "../../assets/icons/material-ui.svg";
+import flutter from "../../assets/icons/flutter.svg";
+import linux from "../../assets/icons/linux.svg";
+import vscode from "../../assets/icons/vs-code.svg";
 
 const skills = [
   { id: 1, name: "HTML", icon: html },
   { id: 2, name: "CSS", icon: css },
   { id: 3, name: "JavaScript", icon: javascript },
   { id: 4, name: "TailwindCSS", icon: tailwindcss },
-  { id: 5, name: "Material UI", icon: tailwindcss },
+  { id: 5, name: "Material UI", icon: materailui },
   { id: 6, name: "ReactJs", icon: reactjs },
-  { id: 7, name: "Angular", icon: github },
+  { id: 7, name: "Angular", icon: angular },
 
   { id: 8, name: "ExpressJs", icon: express },
   { id: 9, name: "Node", icon: node },
 
-  { id: 10, name: "React Native", icon: css },
-  { id: 11, name: "Flutter", icon: mysql },
+  { id: 10, name: "React Native", icon: reactjs },
+  { id: 11, name: "Flutter", icon: flutter },
 
   { id: 12, name: "MongoDB", icon: mongodb },
   { id: 13, name: "MySQL", icon: mysql },
   { id: 14, name: "Git/Github", icon: github },
-  { id: 15, name: "Linux", icon: github },
-  { id: 16, name: "VS Code", icon: github },
+  { id: 15, name: "Linux", icon: linux },
+  { id: 16, name: "VS Code", icon: vscode },
 
 
 ];

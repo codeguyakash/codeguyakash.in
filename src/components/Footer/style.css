@@ -45,6 +45,10 @@ footer {
   text-decoration: none;
 }
 
+#codeguyakash-signature {
+  width: 200px;
+}
+
 @media only screen and (max-width: 600px) {
   .social-list {
     flex-direction: column;

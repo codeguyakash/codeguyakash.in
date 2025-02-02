@@ -42,6 +42,7 @@ const index = () => {
         </div>
       </div>
       <a href="#home" id="top">TOP</a>
+      <img src="https://codeguyakash.github.io/signature.png" alt="codeguyakash-signature" id="codeguyakash-signature" />
     </footer>
   );
 };

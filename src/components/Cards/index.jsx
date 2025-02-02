@@ -1,41 +1,91 @@
 import React from "react";
-import reactjs from "../../assets/icons/reactjs.svg";
 import "./style.css";
 
-const index = ({ items }) => {
+// Importing skill icons
+import reactjs from "../../assets/icons/reactjs.svg";
+import node from "../../assets/icons/node-js.svg";
+import mongodb from "../../assets/icons/mongodb.svg";
+import express from "../../assets/icons/express.svg";
+import tailwindcss from "../../assets/icons/tailwindcss.svg";
+import javascript from "../../assets/icons/javascript.svg";
+import html from "../../assets/icons/html.svg";
+import css from "../../assets/icons/css.svg";
+import github from "../../assets/icons/github.svg";
+import mysql from "../../assets/icons/mysql.svg";
+import angular from "../../assets/icons/angular.svg";
+import materialui from "../../assets/icons/material-ui.svg";
+import flutter from "../../assets/icons/flutter.svg";
+import linux from "../../assets/icons/linux.svg";
+import vscode from "../../assets/icons/vs-code.svg";
+
+// Skill-to-icon mapping
+const skillIcons = {
+  "React.js": reactjs,
+  "Node.js": node,
+  "Express.js": express,
+  "MongoDB": mongodb,
+  "Tailwind CSS": tailwindcss,
+  "JavaScript": javascript,
+  "HTML": html,
+  "CSS": css,
+  "GitHub": github,
+  "MySQL": mysql,
+  "Angular": angular,
+  "Material-UI": materialui,
+  "Flutter": flutter,
+  "Linux": linux,
+  "VS Code": vscode,
+};
+
+const ProjectCard = ({ items }) => {
   const star = new Array(5).fill(0);
+
   return (
     <div className="card-container">
-      <div className="cards" >
-        <img
-          src={reactjs}
-          alt="project-1"
-          id="project-image"
-        />
-
+      <div className="cards">
         <h3 className="color">{items.title}</h3>
         <p className="color">{items.description}</p>
-        <h4 className="color">Techbologies:{items.skills} </h4>
-        <div className="stars">
-          {
-            star.map((_, index) => (
-              <span className="star-rating" key={index}>
-                ☆
-              </span>))
-          }
+
+        <h4 className="color">Technologies Used:</h4>
+        <div className="skills-container">
+          {items?.skills?.map((skill, index) => {
+            const trimmedSkill = skill.trim(); // Ensure no extra spaces
+            return (
+              skillIcons[trimmedSkill] && (
+                <div className="skill-box" key={index}>
+                  <img
+                    key={index}
+                    src={skillIcons[trimmedSkill]}
+                    alt={trimmedSkill}
+                    className="skill-icon"
+                  />
+                  <span className="skill-name">{trimmedSkill}</span>
+                </div>
+              )
+            );
+          })}
         </div>
+
+        <div className="stars">
+          {star.map((_, index) => (
+            <span className="star-rating" key={index}>☆</span>
+          ))}
+        </div>
+
         <div className="links">
-          <a className="color" href={items.sourceCodeLink}>
+          <a className="color" href={items.sourceCodeLink} target="_blank" rel="noopener noreferrer">
             Source Code
           </a>{" "}
           <br />
-          <a className="color" href={items.demoLink}>
-            Demo Code
-          </a>
+          {items.demoLink !== "null" && (
+            <a className="color" href={items.demoLink} target="_blank" rel="noopener noreferrer">
+              Demo
+            </a>
+          )}
         </div>
       </div>
     </div>
   );
 };
 
-export default index;
+export default ProjectCard;
