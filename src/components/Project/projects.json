@@ -1,0 +1,198 @@
+[
+    {
+        "projectId": 1,
+        "id": 1,
+        "title": "Broadmail (Bulk Emails)",
+        "description": "The frontend is a user-friendly React.js interface, integrating NextAuth.js for secure Google authentication. It's designed for easy navigation, responsive layouts, and seamless CSV file uploads for bulk email sending.",
+        "imgUrl": "",
+        "sourceCodeLink": "https://github.com/codeguyakash/broadmail",
+        "demoLink": "https://broadmail.codeguyakash.me/",
+        "color": "#f9f4da",
+        "skills": [
+            "Node.js ",
+            "Express.js ",
+            "MongoDB ",
+            "JWT",
+            "Bcrypt",
+            "Nextjs ",
+            "Nodemailer "
+        ]
+    },
+    {
+        "projectId": 2,
+        "id": 2,
+        "title": "URL Shortener",
+        "description": "A simple and efficient URL shortener web application built with Node.js and Express.js. It allows users to input a long URL and receive a shortened version for easier sharing. The application uses MongoDB for data storage and Tailwind CSS for a clean, responsive design.",
+        "imgUrl": "",
+        "sourceCodeLink": "https://github.com/codeguyakash/url-shorten",
+        "demoLink": "https://url.codeguyakash.me/",
+        "color": "#ed203d",
+        "skills": [
+            "Node.js ",
+            "Express.js ",
+            "MongoDB ",
+            "HTML ",
+            "Tailwind CSS "
+        ]
+    },
+    {
+        "projectId": 3,
+        "id": 3,
+        "title": "Notion Landing Page",
+        "description": "A clone of Notion's landing page created as part of an assignment. This project showcases a responsive design and clean layout Reactjs and CSS.",
+        "imgUrl": "",
+        "sourceCodeLink": "https://github.com/codeguyakash/HireQuotient-Assignment",
+        "demoLink": "https://codeguyakash-notion-clone.vercel.app/",
+        "color": "#12b5e5",
+        "skills": [
+            "Node.js ",
+            "Express.js ",
+            "MongoDB ",
+            "JWT ",
+            "Bcrypt "
+        ]
+    },
+    {
+        "projectId": 4,
+        "id": 4,
+        "title": "Backend Safe Notes",
+        "description": "Our application exposes APIs that allow users to perform CRUD operations. Users can create, read, update, and delete data records effortlessly through these endpoints. Additionally, our application includes User Registration APIs.",
+        "imgUrl": "",
+        "sourceCodeLink": "https://github.com/codeguyakash/Note_Application_BE",
+        "demoLink": "null",
+        "color": "#0ba95b",
+        "skills": [
+            "Node.js ",
+            "Express.js ",
+            "MongoDB ",
+            "JWT ",
+            "Bcrypt "
+        ]
+    },
+    {
+        "projectId": 5,
+        "id": 5,
+        "title": "Note Create Web Application",
+        "description": "This is a Note Create Web application where users can perform CRUD operations like Create, Read, Update, and Delete Notes. It is built using ReactJS.",
+        "imgUrl": "",
+        "sourceCodeLink": "https://github.com/codeguyakash/SafeNote",
+        "demoLink": "https://codeguyakash.github.io/SafeNote/",
+        "color": "#fc7428",
+        "skills": [
+            "React.js ",
+            "CSS ",
+            "JavaScript ",
+            "React-Router ",
+            "Axios "
+        ]
+    },
+    {
+        "projectId": 6,
+        "id": 6,
+        "title": "Shopping Website",
+        "description": "A React-based web application that fetches and displays available products using APIs. It provides a seamless shopping experience with a clean and responsive design.",
+        "imgUrl": "",
+        "sourceCodeLink": "https://github.com/codeguyakash/Shoping-Website",
+        "demoLink": "https://codeguyakash.github.io/Shoping-Website/",
+        "color": "#7b5ea7",
+        "skills": [
+            "React.js ",
+            "CSS ",
+            "JavaScript ",
+            "Axios "
+        ]
+    },
+    {
+        "projectId": 7,
+        "id": 7,
+        "title": "News Application",
+        "description": "A dynamic news web application using HTML, CSS, and JavaScript. It seamlessly integrates with a News API to provide real-time news updates. Users can stay informed with the latest headlines and articles in a user-friendly and responsive interface.",
+        "imgUrl": "",
+        "sourceCodeLink": "https://github.com/codeguyakash/News-Application",
+        "demoLink": "https://codeguyakash.github.io/News-Application/",
+        "color": "#12b5e5",
+        "skills": [
+            "HTML ",
+            "CSS ",
+            "JavaScript ",
+            "API's "
+        ]
+    },
+    {
+        "projectId": 8,
+        "id": 8,
+        "title": "Neumorphic Calculator",
+        "description": "A Neumorphic Design Calculator created using HTML, CSS, and JavaScript.",
+        "imgUrl": "",
+        "sourceCodeLink": "https://github.com/codeguyakash/Neumorpic-Calculator",
+        "demoLink": "https://codeguyakash.github.io/Neumorpic-Calculator/",
+        "color": "#f9f4da",
+        "skills": [
+            "HTML ",
+            "CSS ",
+            "JavaScript "
+        ]
+    },
+    {
+        "projectId": 9,
+        "id": 9,
+        "title": "Portfolio",
+        "description": "This is my first portfolio created using HTML and CSS.",
+        "imgUrl": "",
+        "sourceCodeLink": "https://github.com/codeguyakash/akash",
+        "demoLink": "https://codeguyakash.github.io/akash/",
+        "color": "#ed203d",
+        "skills": [
+            "HTML ",
+            "CSS ",
+            "JavaScript "
+        ]
+    },
+    {
+        "projectId": 10,
+        "id": 10,
+        "title": "Don't Click 😁 (Hacking Tool)",
+        "description": "Capture user IP and live location effortlessly on our website. With Elastic Mail SMTP integration, receive this data securely in your email for instant access to valuable geolocation insights.",
+        "imgUrl": "",
+        "sourceCodeLink": "https://github.com/codeguyakash/HappyHacking",
+        "demoLink": "https://codeguyakash.github.io/HappyHacking/",
+        "color": "#0ba95b",
+        "skills": [
+            "HTML ",
+            "CSS ",
+            "JavaScript ",
+            "Elasticemail ",
+            "API's "
+        ]
+    },
+    {
+        "projectId": 11,
+        "id": 11,
+        "title": "Random Password Generator",
+        "description": "A simple Random Password Generator created using HTML, CSS, and JavaScript.",
+        "imgUrl": "https://codeguyakash.github.io/akash/image/safenotes.jpg",
+        "sourceCodeLink": "https://github.com/codeguyakash/RandomPassword",
+        "demoLink": "https://codeguyakash.github.io/RandomPassword/",
+        "color": "#fc7428",
+        "skills": [
+            "HTML ",
+            "CSS ",
+            "JavaScript "
+        ]
+    },
+    {
+        "projectId": 12,
+        "id": 12,
+        "title": "MDN Clone",
+        "description": "A simple clone of the MDN page created using HTML and CSS.",
+        "imgUrl": "",
+        "sourceCodeLink": "https://github.com/codeguyakash/mdn",
+        "demoLink": "https://codeguyakash.github.io/mdn/",
+        "color": "#7b5ea7",
+        "skills": [
+            "HTML ",
+            "CSS ",
+            "JavaScript "
+        ]
+    }
+]

@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.css";
 import profileImage from "../../assets/images/profile.png";
+import axios from "axios";
 
 const index = () => {
+  const [user, setUser] = React.useState(null);
+  useEffect(() => {
+    axios
+      .get("https://api.github.com/users/codeguyakash").then((res) => {
+        setUser(res.data);
+        console.log(`%c @${res.data.login}`, `font-size:30px; color:white;`)
+        console.log(res.data);
+      }).catch((e) => {
+        console.log(e.message);
+      });
+  }, []);
   return (
     <>
       <section id="about-section">
@@ -13,19 +25,24 @@ const index = () => {
         <div className="container">
           <div id="about-image">
             <img
-              src={profileImage}
+              src={user?.avatar_url || profileImage}
               alt="heroimage"
             />
+
           </div>
+
           <div id="about-content">
+            <p>{user?.name}</p>
+            <p>Followers:{user?.followers}</p>
+
+            <p>{user?.html_url}</p>
             <p>
-              :-) Hey, I'm <span>AKASH.</span> I have been a full-stack web developer since 2020, and I love React. I didn't even know what React was when I landed my first job, but once I discovered it, I immediately fell in love.
-              <span>
-
-
-                Through many hours of studying and practice, I was eventually able to learn enough React to comfortably build any project I could think of.</span> Now, my passion is sharing that knowledge with others. I learned programming both on my own and in college.
-
+              {user?.bio || "I am a Frontend Software Engineer with a passion for building scalable and responsive web applications. I have experience in building web applications using React.js, Node.js, Express.js, and MongoDB. I am also familiar with Tailwind CSS, JavaScript, HTML, CSS, GitHub, MySQL, Angular, Material-UI, Flutter, Linux, and VS Code."}
             </p>
+            <a href={user?.html_url} target="_blank" rel="noreferrer" id="github-link">
+              <p>{`@${user?.twitter_username}`}</p>
+            </a>
+            <p>{user?.location}</p>
           </div>
         </div>
       </section>
