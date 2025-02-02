@@ -40,16 +40,16 @@ const Index = () => {
       <Navbar />
       <Hero />
 
-      <Divider />
+      {/* <Divider /> */}
       <Skills />
 
-      <Divider />
+      {/* <Divider /> */}
       <Project />
 
-      <Divider />
+      {/* <Divider /> */}
       <About />
 
-      <Divider />
+      {/* <Divider /> */}
       <Footer />
     </>
   );

@@ -1,6 +1,12 @@
 #divider {
-  margin: 50px auto;
-  border: 2px solid #fcba28;
-  width: 50px;
-  transform: rotate(90deg);
+  margin: 0px auto;
+  border: 1px solid #3f3d3e;
+  width: 20px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+
 }

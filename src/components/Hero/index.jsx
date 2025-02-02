@@ -6,20 +6,23 @@ const Index = () => {
   return (
     <section id="hero-section">
       <div id="hero-content">
-        <h1 className="welcome">WELCOME, FRIEND</h1>
-        <h2>Stuck in tutorial hell?</h2>
+        <h1 className="welcome">WELCOME, FRIENDS</h1>
+        <h2>Full Stack developer?</h2>
         <div>
           <p>
-            You’ve come to the right place. We make learning the JavaScript
-            ecosystem fun, approachable, and easy...
+            I'm Akash a Developer
+            who turns ideas into reality.
+            <br />
+            I’m here to build, break, and innovate!"
           </p>
-        </div>
-        <div id="hire-btn-div">
-          <a id="hire-btn" href="mailto:codeguyakash@gmail.com">
-            HIRE ME
-          </a>
+          <div id="hire-btn-div">
+            <a id="hire-btn" href="mailto:codeguyakash@gmail.com">
+              HIRE ME
+            </a>
+          </div>
         </div>
       </div>
+
       <div id="hero-image-div">
         <div>
           <img src={heroimage} alt="heroimage" id="hero-image" />

@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import profileImage from "../../assets/images/profile.png";
 
 const index = () => {
   return (
@@ -12,20 +13,18 @@ const index = () => {
         <div className="container">
           <div id="about-image">
             <img
-              src="https://codeguyakash.github.io/akash/image/1693131029776.jpg"
+              src={profileImage}
               alt="heroimage"
             />
           </div>
           <div id="about-content">
             <p>
-              Hey,👋 I'm <span>AKASH.</span> I am a skilled Frontend developer
-              with expertise in ReactJs and experience building responsive,
-              user-friendly websites using HTML, CSS, and JavaScript. I'm also
-              proficient in front-end frameworks like Material UI and React.js.{" "}
+              :-) Hey, I'm <span>AKASH.</span> I have been a full-stack web developer since 2020, and I love React. I didn't even know what React was when I landed my first job, but once I discovered it, I immediately fell in love.
               <span>
-                Currently, I'm actively pursuing mastery of the MERN stack
-                (MongoDB, Express, React, Node.js).
-              </span>
+
+
+                Through many hours of studying and practice, I was eventually able to learn enough React to comfortably build any project I could think of.</span> Now, my passion is sharing that knowledge with others. I learned programming both on my own and in college.
+
             </p>
           </div>
         </div>

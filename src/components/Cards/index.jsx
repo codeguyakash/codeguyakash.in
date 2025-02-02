@@ -1,13 +1,14 @@
 import React from "react";
+import reactjs from "../../assets/icons/reactjs.svg";
 import "./style.css";
 
 const index = ({ items }) => {
-  let starrating = null;
+  const star = new Array(5).fill(0);
   return (
     <div className="card-container">
-      <div className="cards" style={{ background: items.color }}>
+      <div className="cards" >
         <img
-          src="https://cdn-icons-png.flaticon.com/512/10832/10832132.png"
+          src={reactjs}
           alt="project-1"
           id="project-image"
         />
@@ -16,13 +17,14 @@ const index = ({ items }) => {
         <p className="color">{items.description}</p>
         <h4 className="color">Techbologies:{items.skills} </h4>
         <div className="stars">
-          <span className="star-rating">⭐</span>
-          <span className="star-rating">⭐</span>
-          <span className="star-rating">⭐</span>
-          <span className="star-rating">⭐</span>
-          <span className="star-rating">⭐</span>
+          {
+            star.map((_, index) => (
+              <span className="star-rating" key={index}>
+                ☆
+              </span>))
+          }
         </div>
-        <div>
+        <div className="links">
           <a className="color" href={items.sourceCodeLink}>
             Source Code
           </a>{" "}

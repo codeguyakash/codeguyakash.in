@@ -1,189 +1,82 @@
+/* CSS */
 #hero-section {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 0px auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-}
-/* #hero-section {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 100px;
-  } */
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  text-align: center;
+  padding: 20px;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: #3f3d3e;
 
-#hero-content > h1 {
-  font-size: 72px;
+}
+
+#hero-content {
+  max-width: 600px;
+}
+
+#hero-content h1 {
+  font-size: 3rem;
   font-family: "Paytone One", sans-serif;
 }
-#hero-content > h2 {
-  margin-top: 10px;
-  font-size: 40px;
-  opacity: 0.5;
-  transform: translateY(3rem);
-  animation: fadeIn2 1s ease-in-out forwards;
+
+#hero-content h2 {
+  font-size: 2rem;
+  opacity: 0.7;
 }
-#hero-content > div > p {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  font-size: 24px;
-  opacity: 0.5;
-  transform: translateY(3rem);
-  animation: fadeIn2 1s ease-in-out 200ms forwards;
+
+#hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin-bottom: 20px;
 }
-#hire-btn-div {
-  opacity: 0.5;
-  transform: translateY(3rem);
-  animation: fadeIn2 1s ease-in-out 400ms both;
-}
+
 #hire-btn {
   text-decoration: none;
   font-size: 18px;
-  border: 2px solid #fcba28;
+  border: 1px solid #3f3d3e;
   background: #0f0d0e;
-  border-radius: 25px;
   padding: 10px 30px;
-  color: #fcba28;
+  color: #3f3d3e;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#hire-btn:hover {
+  color: #959595;
   cursor: pointer;
   transition: 0.5s;
 }
-#hire-btn:hover {
-  margin-top: 20px;
-  background: #fcba28;
-  color: #231f20;
-  transition: 0.5s;
+
+#hero-image-div {
+  max-width: 400px;
+  padding: 20px;
 }
+
 #hero-image {
-  position: absolute;
-  width: 350px;
-  background: #f9f4da;
-  top: 40px;
-  left: 25px;
-  border-radius: 300px 200px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
   border: 5px solid #3f3d3e;
 }
 
-#hero-image-div > div {
-  padding: 10px;
-  border: 5px solid #f9f4da;
-  border-radius: 10px;
-  background: #fcba28;
-  box-shadow: 10px 10px 0 #f9f4da;
-  width: 400px;
-  height: 500px;
-  transform: rotate(10deg);
-  transform: translateY(3rem);
-  opacity: 0.5;
-  animation: fadeIn 900ms ease forwards;
-}
-
-@media screen and (min-width: 601px) and (max-width: 1200px) {
+@media (max-width: 768px) {
   #hero-section {
-    margin-top: 10px;
     flex-direction: column;
   }
-  .welcome::after,
-  .welcome::before {
-    display: none;
-  }
-}
 
-@media only screen and (max-width: 600px) {
-  #hero-section {
-    margin-top: 10px;
-    flex-direction: column;
+  #hero-content h1 {
+    font-size: 2.5rem;
   }
-  #hero-content > h1 {
-    font-size: 62px;
-  }
-  #hero-content > h2 {
-    margin-top: 10px;
-    font-size: 30px;
-  }
-  #hero-content > div > p {
-    margin-top: 10px;
-    font-size: 16px;
-  }
-  #hero-image-div > div {
-    margin-top: 30px;
-    width: 320px;
-    height: 400px;
-  }
-  #hero-image {
-    width: 260px;
-    top: 40px;
-    left: 25px;
-  }
-  .welcome::after,
-  .welcome::before {
-    display: none;
-  }
-}
 
-/* animation typing and blinking */
-.welcomes::before,
-.welcomes::after {
-  content: "";
-  position: absolute;
-  top: 20rem;
-  right: 0;
-  bottom: 0;
-  left: 8%;
-}
-.welcomes::before {
-  background-color: #0f0d0e;
-  /* width: 0.125em; */
-  height: 5.5rem;
-  animation: typewriter 2s steps(15) 1s forwards;
-}
-.welcomes::after {
-  width: 0.125em;
-  height: 10.5rem;
-  background-color: #fcba28;
-  animation: typewriter 2s steps(15) 1s forwards, blink 750ms steps(24) infinite;
-}
-.welcome {
-  animation: changeColor 10s infinite alternate;
-}
-@keyframes changeColor {
-  0% {
-    color: #f9f4da;
+  #hero-content h2 {
+    font-size: 1.8rem;
   }
-  25% {
-    color: #12b5e5;
-  }
-  50% {
-    color: #0ba95b;
-  }
-  75% {
-    color: #fc7428;
-  }
-  100% {
-    color: #7b5ea7;
-  }
-}
-@keyframes typewriter {
-  to {
-    left: 51%;
-  }
-}
-@keyframes blink {
-  to {
-    background: transparent;
-  }
-}
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0rem);
-    transform: rotate(-5deg);
-  }
-}
-@keyframes fadeIn2 {
-  to {
-    opacity: 1;
-    transform: translateY(0rem);
+  #hero-content p {
+    font-size: 1rem;
   }
 }

@@ -4,7 +4,10 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
+  /* border: 1px solid rebeccapurple   */
 }
+
+
 
 html {
   scroll-behavior: smooth;
@@ -12,9 +15,10 @@ html {
 
 body {
   background-color: #0f0d0e;
+  /* background-color: black; */
   margin: 50px 12%;
   --sb-track-color: #0f0d0e;
-  --sb-thumb-color: #fcba28;
+  --sb-thumb-color: #3f3d3e;
   --sb-size: 4px;
   --sb-size: 4px;
 }
@@ -38,6 +42,7 @@ body::-webkit-scrollbar-thumb {
     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
 }
+
 ::selection {
   color: #0f0d0e;
   background: #fcba28;

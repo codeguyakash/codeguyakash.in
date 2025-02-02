@@ -1,51 +1,50 @@
 .container {
   width: 100%;
+
 }
+
+
 nav {
+  padding: 0 120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 50px;
   position: relative;
+  border: 1px solid #3f3d3e;
 }
-#logo {
+
+.logo-a {
   border-radius: 5px;
   font-size: 35px;
   font-family: "Paytone One", sans-serif;
   cursor: pointer;
-}
-#resume-btn {
-  border: 2px solid #fcba28;
-  font-size: 18px;
-  border-radius: 25px;
-  padding: 10px 30px;
-  color: #fcba28;
-  background: #0f0d0e;
-  transition: 0.5s;
+  color: #3f3d3e;
   text-decoration: none;
-  white-space: nowrap;
 }
-#resume-btn:hover {
-  background: #fcba28;
-  color: #231f20;
-  transition: 0.5s;
+
+.logo-a:hover {
+  color: #959595;
 }
+
 ul {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
+
 li {
   font-size: 20px;
   list-style: none;
-  margin: 0px 25px;
   transition: 0.5s;
 }
-li > a {
-  color: #fcba28;
+
+li>a {
+  color: #3f3d3e;
   text-decoration: none;
 }
-li > a:hover {
-  color: #f9f4da;
+
+li>a:hover {
+  color: #959595;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -77,6 +76,7 @@ li > a:hover {
   }
 
   nav {
+    padding: 0px;
     margin-bottom: 0;
   }
 
@@ -84,10 +84,4 @@ li > a:hover {
     font-size: 20px;
   }
 
-  #resume-btn {
-    padding: 6px 16px;
-    position: absolute;
-    right: 10px;
-    top: 1px;
-  }
 }

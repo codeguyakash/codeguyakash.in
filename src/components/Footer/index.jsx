@@ -38,10 +38,10 @@ const index = () => {
           </div>
         </div>
         <div id="copyright">
-          copyright@2023-24 | Made with ❤️ by codeguyakash
+          copyright@2024-25 | Made with &#x2665; by codeguyakash
         </div>
       </div>
-      <a href="#home">TOP</a>
+      <a href="#home" id="top">TOP</a>
     </footer>
   );
 };

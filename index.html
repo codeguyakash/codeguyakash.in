@@ -1,66 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Paytone+One&display=swap"
-      rel="stylesheet"
-    />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://codeguyakash.github.io/server/profile-pic.png"
-    />
-    <title>@codeguyakash</title>
-    <style>
-      body {
-        color: #f9f4da;
-        background-color: #0f0d0e;
-      }
-      .loader-container {
-        padding: 100px 0;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-      }
-      #preloader {
-        height: 100px;
-        width: 100px;
-        border: 2px solid #fcba28;
-        margin-bottom: 50px;
-        border-radius: 25px;
-        animation: preloader 1.2s linear infinite;
-      }
-      @keyframes preloader {
-        0% {
-          transform: rotate(0deg);
-        }
 
-        100% {
-          transform: rotate(360deg);
-        }
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Paytone+One&display=swap"
+    rel="stylesheet" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
+  <title>@codeguyakash</title>
+  <style>
+    body {
+      color: #f9f4da;
+      background-color: #0f0d0e;
+    }
+
+    .loader-container {
+      padding: 100px 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    #preloader {
+      height: 100px;
+      width: 100px;
+      border: 2px solid #3f3d3e;
+      margin-bottom: 50px;
+      border-radius: 25px;
+      animation: preloader 1.2s linear infinite;
+    }
+
+    @keyframes preloader {
+      0% {
+        transform: rotate(0deg);
       }
-    </style>
-  </head>
-  <body>
-    <div id="root">
-      <div class="loader-container">
-        <div id="preloader"></div>
-        <div>Loading...</div>
-        <br />
-        <div>codeguyakash.me</div>
-      </div>
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <div class="loader-container">
+      <div id="preloader"></div>
+      <div>Loading...</div>
+      <br />
+      <div>codeguyakash.me</div>
     </div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  </div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

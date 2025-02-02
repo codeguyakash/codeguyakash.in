@@ -1,14 +1,16 @@
 footer {
-  background-color: #231f20;
+
   height: 400px;
-  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
   flex-direction: column;
   padding: 100px 0;
+  border: 1px solid #3f3d3e;
+
 }
+
 .social-list {
   display: flex;
   flex-direction: row;
@@ -16,26 +18,43 @@ footer {
   justify-content: center;
   gap: 20px;
 }
+
 .social-items {
-  background: #1c191a;
-  padding: 8px 18px;
-  border-radius: 10px;
   margin-bottom: 50px;
 }
-.social-items > a {
+
+
+
+.social-items>a {
   text-decoration: none;
+  color: #3f3d3e;
 }
+
+.social-items>a:hover {
+  color: #959595;
+}
+
 #copyright {
   text-align: center;
+  color: #3f3d3e;
 }
+
+#top {
+  color: #3f3d3e;
+  text-align: center;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 600px) {
   .social-list {
     flex-direction: column;
     gap: 0;
   }
+
   .footer {
     flex-direction: row;
   }
+
   .social-items {
     background: none;
     padding: 0 5px;

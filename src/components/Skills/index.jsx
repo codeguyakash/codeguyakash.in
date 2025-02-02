@@ -13,17 +13,27 @@ import github from "../../assets/icons/github.svg";
 import mysql from "../../assets/icons/mysql.svg";
 
 const skills = [
-  { id: 1, name: "Node", icon: node },
-  { id: 2, name: "MongoDB", icon: mongodb },
-  { id: 3, name: "ExpressJs", icon: express },
-  { id: 4, name: "ReactJs", icon: reactjs },
+  { id: 1, name: "HTML", icon: html },
+  { id: 2, name: "CSS", icon: css },
+  { id: 3, name: "JavaScript", icon: javascript },
+  { id: 4, name: "TailwindCSS", icon: tailwindcss },
+  { id: 5, name: "Material UI", icon: tailwindcss },
+  { id: 6, name: "ReactJs", icon: reactjs },
+  { id: 7, name: "Angular", icon: github },
 
-  { id: 5, name: "TailwindCSS", icon: tailwindcss },
-  { id: 6, name: "JavaScript", icon: javascript },
-  { id: 7, name: "HTML", icon: html },
-  { id: 8, name: "CSS", icon: css },
-  { id: 9, name: "Git/Github", icon: github },
-  { id: 10, name: "MySQL", icon: mysql },
+  { id: 8, name: "ExpressJs", icon: express },
+  { id: 9, name: "Node", icon: node },
+
+  { id: 10, name: "React Native", icon: css },
+  { id: 11, name: "Flutter", icon: mysql },
+
+  { id: 12, name: "MongoDB", icon: mongodb },
+  { id: 13, name: "MySQL", icon: mysql },
+  { id: 14, name: "Git/Github", icon: github },
+  { id: 15, name: "Linux", icon: github },
+  { id: 16, name: "VS Code", icon: github },
+
+
 ];
 
 const SkillSection = () => {
@@ -42,7 +52,7 @@ const SkillSection = () => {
                 alt={`${skill.name} Logo`}
                 className="skills-logos"
               />
-              <span className="color">{skill.name}</span>
+              <span>{skill.name}</span>
             </div>
           </div>
         ))}

@@ -1,38 +1,46 @@
 #about-section {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  border: 1px solid #3f3d3e;
+  padding-bottom: 100px;
 }
-#about-content > #heading > h1 {
+
+#about-content>#heading>h1 {
   font-size: 72px;
   font-family: "Paytone One", sans-serif;
 }
-#about-content > #heading > h3 {
+
+#about-content>#heading>h3 {
   text-align: center;
   font-family: "Outfit", sans-serif;
   font-size: 30px;
 }
-#about-content > p {
-  font-size: 24px;
+
+#about-content>p {
+  font-size: 22px;
   font-family: "Outfit", sans-serif;
+  color: #3f3d3e;
 }
-#about-content > p > span {
-  color: #fcba28;
+
+#about-content>p>span {
+  color: #3f3d3e;
+
 }
-#about-image > img {
+
+#about-image>img {
   width: 200px;
   height: 200px;
   display: block;
   margin: 0 auto;
-  border: 10px solid #fcba28;
-  padding: 10px;
+  border: 5px solid #3f3d3e;
   border-radius: 50%;
   transition: 0.5s;
   margin-bottom: 50px;
 }
-#about-image > img:hover {
+
+#about-image>img:hover {
   scale: 1.05;
   transition: 0.5s;
 }
+
 #about-content {
   width: 80%;
   margin: 0 auto;
@@ -52,16 +60,20 @@
     width: 100%;
     text-align: justify;
   }
-  #about-content > p {
+
+  #about-content>p {
     font-size: 16px;
     font-family: "Outfit", sans-serif;
   }
-  #about-section > #heading > h3 {
+
+  #about-section>#heading>h3 {
     font-size: 16px;
   }
-  #about-image > img {
+
+  #about-image>img {
     margin-bottom: 20px;
   }
+
   #about-section {
     margin-top: 50px;
     margin-bottom: 50px;
