@@ -9,7 +9,7 @@
 }
 
 #project-section {
-  margin-bottom: 100px;
+  margin-bottom: 47px;
   border-left: 1px solid #3f3d3e;
   border-right: 1px solid #3f3d3e;
 }
@@ -41,4 +41,56 @@
   .projects {
     gap: 40px;
   }
+}
+
+
+.contribution-boxes {
+  width: 25px;
+  height: 25px;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #3f3d3e;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.main-con-container {
+
+  width: 70%;
+  margin: 50px auto 0 auto;
+}
+
+
+.bg-gray-200 {
+  background-color: #323232;
+  color: black;
+}
+
+.bg-green-300 {
+  background-color: #c2c2c2;
+  color: black;
+}
+
+.bg-green-500 {
+  background-color: #757575;
+  color: white;
+}
+
+.bg-green-700 {
+  background-color: #494949;
+  color: white;
+}
+
+.bg-green-900 {
+  background-color: #343434;
+  color: white;
 }
