@@ -1,5 +1,4 @@
-import React from "react";
-import "./style.css";
+import './style.css';
 
 const index = () => {
   return (
@@ -10,8 +9,7 @@ const index = () => {
             <a
               href="https://github.com/codeguyakash"
               target="_blank"
-              rel="noreferrer"
-            >
+              rel="noreferrer">
               GITHUB
             </a>
           </div>
@@ -19,8 +17,7 @@ const index = () => {
             <a
               href="https://www.linkedin.com/in/codeguyakash/"
               target="_blank"
-              rel="noreferrer"
-            >
+              rel="noreferrer">
               LINKEDIN
             </a>
           </div>
@@ -28,8 +25,7 @@ const index = () => {
             <a
               href="https://twitter.com/codeguyakash"
               target="_blank"
-              rel="noreferrer"
-            >
+              rel="noreferrer">
               TWITTER
             </a>
           </div>
@@ -41,8 +37,12 @@ const index = () => {
           copyright@2024-25 | Made with &#x2665; by codeguyakash
         </div>
       </div>
-      <a href="#home" id="top">TOP</a>
-      <img src="https://codeguyakash.github.io/signature.png" alt="codeguyakash-signature" id="codeguyakash-signature" />
+      <a href="#home" id="top">
+        TOP
+      </a>
+      <div className="sign-div">
+        <p className="signature-text">codeguyakash</p>
+      </div>
     </footer>
   );
 };

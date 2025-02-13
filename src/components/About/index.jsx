@@ -9,7 +9,6 @@ const About = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isLoading2, setIsLoading2] = useState(false);
   const [year, setYear] = useState('2024');
-
   useEffect(() => {
     setIsLoading2(true);
     axios
