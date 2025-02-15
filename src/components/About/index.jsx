@@ -29,7 +29,7 @@ const About = () => {
     setIsLoading(true);
     try {
       const response = await axios.post(
-        'https://git-graph-node.onrender.com/graph',
+        'https://git-graph-node.vercel.app/graph',
         payload
       );
       setContributions(response.data.data);
