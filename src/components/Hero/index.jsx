@@ -1,6 +1,5 @@
-import React from "react";
-import "./style.css";
-import heroimage from "../../assets/images/heroimage.png";
+import './style.css';
+import heroimage from '../../assets/images/heroimage.png';
 
 const Index = () => {
   return (
@@ -10,8 +9,7 @@ const Index = () => {
         <h2>Full Stack developer?</h2>
         <div>
           <p>
-            I'm Akash a Developer
-            who turns ideas into reality.
+            I'm Akash a Developer who turns ideas into reality.
             <br />
             I’m here to build, break, and innovate!"
           </p>

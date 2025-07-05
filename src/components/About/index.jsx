@@ -86,7 +86,7 @@ const About = () => {
               target="_blank"
               rel="noreferrer"
               id="github-link">
-              <p>{`@${user?.twitter_username}`}</p>
+              <p>{`@${user?.twitter_username || 'codeguyakash'}`}</p>
             </a>
             <p>{user?.location}</p>
           </div>
