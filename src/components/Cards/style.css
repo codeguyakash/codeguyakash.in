@@ -21,7 +21,7 @@
 }
 
 .cards>p {
-  text-align: justify;
+  text-align: start;
 }
 
 .cards>div>a {
@@ -39,6 +39,11 @@
   margin: 0;
   padding: 0;
   cursor: pointer;
+}
+
+.cards>.links {
+  display: flex;
+  gap: 5px;
 }
 
 .skills-container {
@@ -60,7 +65,7 @@
 
 
 .skill-name {
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   display: block;
   text-align: center;
 }

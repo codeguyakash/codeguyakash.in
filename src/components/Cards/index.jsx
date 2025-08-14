@@ -3,6 +3,8 @@ import "./style.css";
 
 // Importing skill icons
 import reactjs from "../../assets/icons/reactjs.svg";
+import figma from "../../assets/icons/figma.png";
+import api from '../../assets/icons/api.png';
 import node from "../../assets/icons/node-js.svg";
 import mongodb from "../../assets/icons/mongodb.svg";
 import express from "../../assets/icons/express.svg";
@@ -21,6 +23,7 @@ import vscode from "../../assets/icons/vs-code.svg";
 // Skill-to-icon mapping
 const skillIcons = {
   "React.js": reactjs,
+  "React Native": reactjs,
   "Node.js": node,
   "Express.js": express,
   "MongoDB": mongodb,
@@ -30,11 +33,13 @@ const skillIcons = {
   "CSS": css,
   "GitHub": github,
   "MySQL": mysql,
-  "Angular": angular,
+  "Angular.js": angular,
   "Material-UI": materialui,
   "Flutter": flutter,
   "Linux": linux,
   "VS Code": vscode,
+  "Figma": figma,
+  "API's": api
 };
 
 const ProjectCard = ({ items }) => {
@@ -49,7 +54,7 @@ const ProjectCard = ({ items }) => {
         <h4 className="color">Technologies Used:</h4>
         <div className="skills-container">
           {items?.skills?.map((skill, index) => {
-            const trimmedSkill = skill.trim(); // Ensure no extra spaces
+            const trimmedSkill = skill.trim(); 
             return (
               skillIcons[trimmedSkill] && (
                 <div className="skill-box" key={index}>
@@ -73,15 +78,15 @@ const ProjectCard = ({ items }) => {
         </div>
 
         <div className="links">
-          <a className="color" href={items.sourceCodeLink} target="_blank" rel="noopener noreferrer">
-            Source Code
-          </a>{" "}
-          <br />
           {items.demoLink !== "null" && (
             <a className="color" href={items.demoLink} target="_blank" rel="noopener noreferrer">
               Demo
             </a>
           )}
+           <br />
+          <a className="color" href={items.sourceCodeLink} target="_blank" rel="noopener noreferrer">
+            Source
+          </a>
         </div>
       </div>
     </div>

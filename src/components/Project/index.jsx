@@ -8,7 +8,7 @@ const Index = () => {
 
   useEffect(() => {
     axios
-      .get('https://codeguyakash.github.io/server/data.json')
+      .get('https://raw.githubusercontent.com/codeguyakash/server/main/data.json')
       .then((res) => {
         let data = res.data;
         setProjects(Array.isArray(data) ? data : []);
