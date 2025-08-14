@@ -5,6 +5,7 @@ import "./style.css";
 import reactjs from "../../assets/icons/reactjs.svg";
 import figma from "../../assets/icons/figma.png";
 import api from '../../assets/icons/api.png';
+import socket from '../../assets/icons/socket.png';
 import node from "../../assets/icons/node-js.svg";
 import mongodb from "../../assets/icons/mongodb.svg";
 import express from "../../assets/icons/express.svg";
@@ -39,7 +40,8 @@ const skillIcons = {
   "Linux": linux,
   "VS Code": vscode,
   "Figma": figma,
-  "API's": api
+  "API's": api,
+  "WebSocket": socket
 };
 
 const ProjectCard = ({ items }) => {

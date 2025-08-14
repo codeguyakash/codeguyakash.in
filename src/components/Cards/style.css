@@ -60,7 +60,9 @@
   width: 30px;
   height: 30px;
   object-fit: contain;
-  margin: 0 5px;
+  margin: auto 5px;
+  display: block;
+
 }
 
 
