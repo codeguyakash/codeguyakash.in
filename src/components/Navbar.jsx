@@ -9,14 +9,14 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full" id="home">
-        <nav className="flex items-center justify-between px-6 md:px-28 border border-[#3f3d3e] relative">
+      <div className="w-full mt-10" id="home">
+        <nav className="flex items-center justify-between px-6 md:px-28 border border-[#dfdfdf]">
           <div>
             <a
-              href="https://docs.google.com/document/d/1r-8pxSkfPca_PQvwkNbncUaiIBQB_xtV8F6SHK8jfNs/edit?tab=t.0"
+              href="https://docs.google.com/document/d/1r-8pxSkfPca_PQvwkNbncUaiIBQB_xtV8F6SHK8jfNs/view"
               target="_blank"
               rel="noreferrer"
-              className="text-[35px] font-[Paytone_One] text-[#3f3d3e] hover:text-[#959595] transition-colors duration-300">
+              className="text-[35px] hover:text-gray-700 font-bold transition-colors duration-300">
               CODEGUYAKASH
             </a>
           </div>
@@ -68,11 +68,10 @@ const Navbar = () => {
               <li>
                 <a
                   id="resume-btn"
-                  href="https://docs.google.com/document/d/1r-8pxSkfPca_PQvwkNbncUaiIBQB_xtV8F6SHK8jfNs/edit?tab=t.0"
-                  target="_blank"
+                  href="https://docs.google.com/document/d/1r-8pxSkfPca_PQvwkNbncUaiIBQB_xtV8F6SHK8jfNs/view"
                   rel="noreferrer"
-                  className="px-4 py-2 border border-[#3f3d3e] rounded-lg text-[#3f3d3e] hover:bg-[#3f3d3e] hover:text-white transition duration-300">
-                  DOWNLOAD CV
+                  className=" text-black border border-black hover:text-white hover:bg-black py-2 px-4 transition duration-300">
+                  RESUME
                 </a>
               </li>
             </ul>
