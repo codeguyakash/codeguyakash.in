@@ -1,6 +1,4 @@
-import './style.css';
-
-const index = () => {
+const Footer = () => {
   return (
     <footer>
       <div className="container">
@@ -47,4 +45,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Footer;

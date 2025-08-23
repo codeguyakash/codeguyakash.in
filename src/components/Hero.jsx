@@ -1,7 +1,6 @@
-import './style.css';
-import heroimage from '../../assets/images/heroimage.png';
+import heroimage from '../assets/images/heroimage.png';
 
-const Index = () => {
+const Hero = () => {
   return (
     <section id="hero-section">
       <div id="hero-content">
@@ -30,4 +29,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Hero;

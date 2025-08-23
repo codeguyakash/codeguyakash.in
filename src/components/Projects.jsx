@@ -1,14 +1,15 @@
 import { useState, useEffect } from 'react';
-import Cards from '../Cards';
+import Cards from './Cards';
 import axios from 'axios';
-import './style.css';
 
-const Index = () => {
+const Projects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     axios
-      .get('https://raw.githubusercontent.com/codeguyakash/server/main/data.json')
+      .get(
+        'https://raw.githubusercontent.com/codeguyakash/server/main/data.json'
+      )
       .then((res) => {
         let data = res.data;
         setProjects(Array.isArray(data) ? data : []);
@@ -32,4 +33,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Projects;

@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import './style.css';
-import profileImage from '../../assets/images/profile.png';
+import profileImage from '../assets/images/profile.png';
 import axios from 'axios';
 
 const About = () => {
