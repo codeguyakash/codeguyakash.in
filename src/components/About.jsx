@@ -67,7 +67,11 @@ const About = () => {
         </div>
         <div className="container">
           <div id="about-image">
-            <img src={user?.avatar_url || profileImage} alt="hero-image" />
+            <img
+              src={user?.avatar_url || profileImage}
+              alt="hero-image"
+              className="w-48"
+            />
             {isLoading2 ? <div className="skeleton-loader"></div> : null}
           </div>
 

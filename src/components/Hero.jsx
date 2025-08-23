@@ -22,7 +22,12 @@ const Hero = () => {
 
       <div id="hero-image-div">
         <div>
-          <img src={heroimage} alt="heroimage" id="hero-image" />
+          <img
+            src={heroimage}
+            alt="heroimage"
+            id="hero-image"
+            className="w-48"
+          />
         </div>
       </div>
     </section>

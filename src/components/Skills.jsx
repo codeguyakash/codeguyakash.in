@@ -14,6 +14,7 @@ import materailui from '../assets/icons/material-ui.svg';
 import flutter from '../assets/icons/flutter.svg';
 import linux from '../assets/icons/linux.svg';
 import vscode from '../assets/icons/vs-code.svg';
+import Heading from './Heading';
 
 const skills = [
   { id: 1, name: 'HTML', icon: html },
@@ -39,22 +40,20 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skill-section">
-      <div id="heading">
-        <h1>SKILLS</h1>
-        <h3>Expertise in technologies</h3>
-      </div>
-      <div className="container">
-        {skills.map((skill, index) => (
-          <div className={`skill skill-${index + 1}`} key={skill.id}>
-            <div className="skill-title">
-              <img
-                src={skill.icon}
-                alt={`${skill.name} Logo`}
-                className="skills-logos"
-              />
-              <span>{skill.name}</span>
-            </div>
+    <section id="skill-section" className="py-10">
+      <Heading title="Skills" subtitle="Expertise in technologies" />
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-8 gap-6 place-items-center">
+        {skills.map((skill) => (
+          <div
+            key={skill.id}
+            className="flex flex-col items-center justify-center p-4">
+            <img
+              src={skill.icon}
+              alt={`${skill.name} Logo`}
+              className="w-16 h-16 object-contain mb-2"
+            />
+            <span className="text-sm font-medium">{skill.name}</span>
           </div>
         ))}
       </div>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Cards from './Cards';
 import axios from 'axios';
+import Heading from './Heading';
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -16,16 +17,14 @@ const Projects = () => {
       })
       .catch((e) => {
         console.error('API Fetch Error:', e.message);
-        setProjects([]); // Ensure projects is always an array
+        setProjects([]);
       });
   }, []);
 
   return (
     <section id="project-section">
-      <div id="heading">
-        <h1>PROJECT</h1>
-      </div>
-      <div className="projects">
+      <Heading title="Projects" subtitle="Showcasing my work" />
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 place-items-center">
         {projects.length > 0 &&
           projects.map((item, index) => <Cards items={item} key={index} />)}
       </div>

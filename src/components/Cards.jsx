@@ -45,14 +45,14 @@ const ProjectCard = ({ items }) => {
   const star = new Array(5).fill(0);
 
   return (
-    <div className="card-container">
+    <div className="card-container min-h-90">
       <div className="cards">
-        <h3 className="color">{items.title}</h3>
-        <p className="color">{items.description}</p>
+        <h3 className="text-lg font-semibold">{items?.title}</h3>
+        <p className="text-sm my-2">{items?.description}</p>
 
-        <h4 className="color">Technologies Used:</h4>
-        <div className="skills-container">
-          {items?.skills?.map((skill, index) => {
+        <h4 className="text-sm font-semibold my-2">Technologies Used:</h4>
+        <div className="flex gap-2 items-center justify-start">
+          {items?.skills?.sort()?.map((skill, index) => {
             const trimmedSkill = skill.trim();
             return (
               skillIcons[trimmedSkill] && (
@@ -61,28 +61,28 @@ const ProjectCard = ({ items }) => {
                     key={index}
                     src={skillIcons[trimmedSkill]}
                     alt={trimmedSkill}
-                    className="skill-icon"
+                    className="skill-icon h-5 w-5 mx-auto"
                   />
-                  <span className="skill-name">{trimmedSkill}</span>
+                  <span className="text-[10px]">{trimmedSkill}</span>
                 </div>
               )
             );
           })}
         </div>
 
-        <div className="stars">
-          {star.map((_, index) => (
+        <div className="stars my-2">
+          {star?.map((_, index) => (
             <span className="star-rating" key={index}>
               ☆
             </span>
           ))}
         </div>
 
-        <div className="links">
-          {items.demoLink !== 'null' && (
+        <div className="links flex text-sm gap-2 font-semibold">
+          {items?.demoLink !== 'null' && (
             <a
               className="color"
-              href={items.demoLink}
+              href={items?.demoLink}
               target="_blank"
               rel="noopener noreferrer">
               Demo
@@ -91,7 +91,7 @@ const ProjectCard = ({ items }) => {
           <br />
           <a
             className="color"
-            href={items.sourceCodeLink}
+            href={items?.sourceCodeLink}
             target="_blank"
             rel="noopener noreferrer">
             Source
