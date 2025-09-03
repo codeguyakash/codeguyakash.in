@@ -1,30 +1,30 @@
 import { useState, useEffect } from 'react';
-import Cards from '../Cards';
+import Cards from './Cards';
 import axios from 'axios';
-import './style.css';
+import Heading from './Heading';
 
-const Index = () => {
+const Projects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     axios
-      .get('https://raw.githubusercontent.com/codeguyakash/server/main/data.json')
+      .get(
+        'https://raw.githubusercontent.com/codeguyakash/server/main/data.json'
+      )
       .then((res) => {
         let data = res.data;
         setProjects(Array.isArray(data) ? data : []);
       })
       .catch((e) => {
         console.error('API Fetch Error:', e.message);
-        setProjects([]); // Ensure projects is always an array
+        setProjects([]);
       });
   }, []);
 
   return (
     <section id="project-section">
-      <div id="heading">
-        <h1>PROJECT</h1>
-      </div>
-      <div className="projects">
+      <Heading title="Projects" subtitle="Showcasing my work" />
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 place-items-center">
         {projects.length > 0 &&
           projects.map((item, index) => <Cards items={item} key={index} />)}
       </div>
@@ -32,4 +32,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Projects;
